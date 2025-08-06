@@ -1,2 +1,34 @@
-# Snake-game
-A glowing neon-themed Snake game built with HTML, CSS, and JavaScript. Use arrow keys or WASD to control the snake, eat food to grow, and avoid hitting walls or yourself. Includes score tracking, pause/reset buttons, and high score storage in local storage.
+# 🐍 Neon Snake Game
+
+A glowing neon-themed Snake game built using HTML, CSS, and JavaScript.
+
+## 🎮 How to Play
+
+- Use **Arrow keys** or **WASD** to move the snake
+- Eat the glowing food to grow
+- Avoid hitting walls or yourself
+- Press **Start** to begin, **Pause** to stop, and **Reset** to restart
+- Try to beat your **high score**, which is saved locally!
+
+## 🚀 Features
+
+- ✨ Neon visuals with smooth animations  
+- 🎯 Real-time scoring and level system  
+- 🧠 Local storage for high score  
+- ⏸️ Start, Pause, and Reset buttons  
+- 🎮 Responsive keyboard controls
+
+## 🛠️ Tech Stack
+
+- **HTML5 Canvas** for rendering  
+- **CSS3** for styling and neon glow  
+- **JavaScript** for logic and interactivity  
+
+## 🧪 How to Run
+
+Just open the `index.html` file in your browser—no installation required!
+
+```bash
+git clone <your-repo-url>
+cd neon-snake
+open index.html
