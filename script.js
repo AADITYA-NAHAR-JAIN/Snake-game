@@ -16,6 +16,8 @@ let directionChangeCooldown = 0;
 
 window.onload = function() {
   canvas = document.getElementById('gameCanvas');
+  canvas.width = 400;
+  canvas.height = 400;
   ctx = canvas.getContext('2d');
 
   document.getElementById('score').textContent = score;
