@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Header -->
+    <header class="game-header">
+      <h1 class="game-title">NEON SNAKE</h1>
+      <div class="score-board">
+        <div class="score-item">
+          <span class="label">SCORE</span>
+          <span class="value" id="score">0</span>
+        </div>
+        <div class="score-item">
+          <span class="label">HIGH SCORE</span>
+          <span class="value" id="highScore">0</span>
+        </div>
+        <div class="score-item">
+          <span class="label">LEVEL</span>
+          <span class="value" id="level">1</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Game Area -->
+    <main class="game-main">
+      <div class="game-wrapper">
+        <canvas id="gameCanvas" width="600" height="600"></canvas>
+        
+        <!-- Game Controls -->
+        <div class="controls-panel">
+          <button class="control-btn" id="startBtn">
+            <span>START</span>
+            <div class="ripple"></div>
+          </button>
+          <button class="control-btn" id="pauseBtn">
+            <span>PAUSE</span>
+            <div class="ripple"></div>
+          </button>
+          <button class="control-btn" id="resetBtn">
+            <span>RESET</span>
+            <div class="ripple"></div>
+          </button>
+        </div>
+
+        <!-- Direction Controls (Mobile) -->
+        <div class="mobile-controls">
+          <button class="direction-btn" data-direction="up">↑</button>
+          <div class="horizontal-controls">
+            <button class="direction-btn" data-direction="left">←</button>
+            <button class="direction-btn" data-direction="right">→</button>
+          </div>
+          <button class="direction-btn" data-direction="down">↓</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Game Over Modal -->
+    <div class="modal-overlay" id="gameOverModal">
+      <div class="modal">
+        <h2>GAME OVER</h2>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button class="modal-btn" id="playAgainBtn">PLAY AGAIN</button>
+      </div>
+    </div>
+
+    <!-- Instructions -->
+    <aside class="instructions">
+      <h3>HOW TO PLAY</h3>
+      <ul>
+        <li>Use arrow keys or WASD to move</li>
+        <li>Eat the glowing food to grow</li>
+        <li>Avoid hitting walls or yourself</li>
+        <li>Collect power-ups for bonus points</li>
+      </ul>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
