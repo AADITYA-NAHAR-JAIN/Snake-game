@@ -130,6 +130,10 @@ body::before {
     0 0 20px rgba(0, 217, 255, 0.3),
     inset 0 0 20px rgba(0, 217, 255, 0.1);
   transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
 }
 
 #gameCanvas:hover {
@@ -187,10 +191,11 @@ body::before {
 
 /* Mobile Controls */
 .mobile-controls {
-  display: none;
-  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
-  max-width: 200px;
+  justify-items: center;
+  margin-top: 10px;
 }
 
 .direction-btn {
